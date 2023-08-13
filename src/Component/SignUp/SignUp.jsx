@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const SignUp = () => {
     return (
         <> 
-            <div className="hero min-h-screen w-[460px]">
+            <div className="hero min-h-screen lg:w-[460px] w-[400px]">
                 <div className="card flex-shrink-0 w-full">
                     <form className="card-body">
                         <h2 className='font-semibold text-3xl'>chatsmart.</h2> 
