@@ -1,38 +1,56 @@
 import React from 'react';
-import key from './../../assets/key.svg';
+import keyImg from './../../assets/key.svg';
+import smsImg from './../../assets/sms.svg'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
+
     return (
         <>
-            <div className="hero min-h-screen">
-                <div className="card flex-shrink-0 w-full max-w-sm">
+            <div className="hero min-h-screen w-92">
+                <div className="card flex-shrink-0 w-full max-w-md">
                     <form className="card-body">
                         <h2 className='font-semibold text-3xl'>chatsmart.</h2>
                         <h1 className='font-semibold text-3xl mt-14'>Hey, Hello👋</h1>
-                        <p className='text-[#656565] font-medium leading-7 mt-3'>Inter the information you entered while Registering.</p>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text font-medium">Email</span>
+                        <p className='text-[#656565] font-medium leading-7 mt-3'>Enter the information you entered while Registering.</p>
+                        <div>
+                            <label htmlFor="email" className="block text-md font-medium text-left my-3 font-semibold">
+                                Email
                             </label>
-                            <input
-                                type="email"
-                                placeholder="Type your Email"
-                                className="input placeholder:text-[#656565] text-sm bg-[#F0F0F2]"
-                                required />
+                            <div className="relative">
+                                <span className="absolute inset-y-0 left-0 flex items-center pl-2">
+                                    <img src={keyImg} alt="" />
+                                </span>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    className="pl-10 p-2 w-full rounded-md input placeholder:text-[#656565] text-sm bg-[#F0F0F2]"
+                                    placeholder="Type your Email"
+                                    required
+                                />
+                            </div>
                         </div>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text font-medium">Password</span>
+                        <div>
+                            <label htmlFor="password" className="block text-md font-medium text-left my-3 font-semibold">
+                                Password
                             </label>
-                            <input
-                                type="password"
-                                id='password'
-                                name='password'
-                                placeholder="Type your Password"
-                                className="input placeholder:text-[#656565] text-sm bg-[#F0F0F2]"
-                                required />
+                            <div className="relative">
+                                <span className="absolute inset-y-0 left-0 flex items-center pl-2">
+                                    <img src={smsImg} alt="" />
+                                </span>
+
+                                <input
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    className="pl-10 p-2 w-full rounded-md input placeholder:text-[#656565] text-sm bg-[#F0F0F2]"
+                                    placeholder="Type your Password"
+                                    required
+                                />
+                            </div>
                         </div>
-                        <div className="flex items-center my-2">
+                        <div className="flex items-center my-2 ml-2">
                             <input
                                 type="checkbox"
                                 id="rememberMe"
@@ -47,6 +65,7 @@ const Login = () => {
                             <button type='submit' className="btn bg-[#87FE71] hover:bg-[#87FE71] text-sm font-semibold normal-case">Login</button>
                         </div>
                     </form>
+                    <p>I dont have any account!<Link className='ml-1 underline' to="/signup">SignUp</Link></p>
                 </div>
             </div>
         </>
