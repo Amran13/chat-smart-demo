@@ -14,7 +14,7 @@ const Login = () => {
                         <h1 className='font-semibold text-3xl mt-14'>Hey, Hello👋</h1>
                         <p className='text-[#656565] font-medium leading-7 mt-3'>Enter the information you entered while Registering.</p>
                         <div>
-                            <label htmlFor="email" className="block text-md font-medium text-left my-3 font-semibold">
+                            <label htmlFor="email" className="block text-md text-left my-3 font-semibold">
                                 Email
                             </label>
                             <div className="relative">
@@ -32,7 +32,7 @@ const Login = () => {
                             </div>
                         </div>
                         <div>
-                            <label htmlFor="password" className="block text-md font-medium text-left my-3 font-semibold">
+                            <label htmlFor="password" className="block text-md text-left my-3 font-semibold">
                                 Password
                             </label>
                             <div className="relative">
