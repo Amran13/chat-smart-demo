@@ -19,7 +19,7 @@ const Login = () => {
                             </label>
                             <div className="relative">
                                 <span className="absolute inset-y-0 left-0 flex items-center pl-2">
-                                    <img src={keyImg} alt="" />
+                                    <img src={smsImg} alt="" />
                                 </span>
                                 <input
                                     type="email"
@@ -37,7 +37,7 @@ const Login = () => {
                             </label>
                             <div className="relative">
                                 <span className="absolute inset-y-0 left-0 flex items-center pl-2">
-                                    <img src={smsImg} alt="" />
+                                    <img src={keyImg} alt="" />
                                 </span>
 
                                 <input
