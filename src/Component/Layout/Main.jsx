@@ -4,9 +4,11 @@ import { Outlet } from 'react-router-dom';
 
 const Main = () => {
     return (
-        <div>
+        <div className='flex devide-x'>
             <Header></Header>
-            <Outlet></Outlet>
+            <div className='w-full mt-96'>
+                <Outlet></Outlet>
+            </div>
         </div>
     );
 };

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Login = () => {
 
     return (
-        <>
+        <div className='text-center'>
             <div className="hero min-h-screen lg:w-[460px] w-[400px]">
                 <div className="card flex-shrink-0 w-full">
                     <form className="card-body">
@@ -39,7 +39,6 @@ const Login = () => {
                                 <span className="absolute inset-y-0 left-0 flex items-center pl-2">
                                     <img src={keyImg} alt="" />
                                 </span>
-
                                 <input
                                     type="password"
                                     id="password"
@@ -68,7 +67,7 @@ const Login = () => {
                     <p>I dont have any account!<Link className='ml-1 underline' to="/signup">SignUp</Link></p>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
